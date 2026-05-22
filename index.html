@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menú digital de El Rey de la Media Masa - Pizzería en Mercedes, Buenos Aires">
+    <title>El Rey de la Media Masa - Menú Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Borde damero -->
+    <div class="checker-frame checker-top"></div>
+    <div class="checker-frame checker-bottom"></div>
+    <div class="checker-frame checker-left"></div>
+    <div class="checker-frame checker-right"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="nav-logo-wrap">
+                    <img src="logo-rey-limpio.png" class="nav-logo-img" alt="El Rey de la Media Masa">
+                </div>
+                <p class="nav-location">Mercedes, Buenos Aires</p>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#pizzas" class="nav-link active">Pizzas</a></li>
+                <li><a href="#empanadas" class="nav-link">Empanadones</a></li>
+                <li><a href="#calzone" class="nav-link">Calzone</a></li>
+                <li><a href="#bebidas" class="nav-link">Bebidas</a></li>
+            </ul>
+            <button class="search-toggle" id="searchToggle" aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Buscador -->
+    <div class="search-bar" id="searchBar">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar pizzas por nombre o ingrediente..." autocomplete="off">
+            <button class="search-close" id="searchClose" aria-label="Cerrar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Sección Pizzas -->
+        <section id="pizzas" class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestras Pizzas</h2>
+                </div>
+
+                <div class="pizza-grid" id="pizzaGrid"></div>
+
+                <div class="menu-avisos">
+                    <div class="avisos-politicas">
+                        <div class="aviso-item">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                            <span>Mitad/mitad: se cobra la de mayor valor</span>
+                        </div>
+                        <div class="aviso-item">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Adicional por extra: <strong>$1.000 c/u</strong></span>
+                        </div>
+                    </div>
+                    <div class="aviso-vegana">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>Consultar por opciones <strong>veganas</strong> y <strong>sin TACC</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Empanadones & Calzone -->
+        <section id="empanadas" class="menu-section section-alt">
+            <div class="container">
+                <div class="two-columns">
+                    <div class="subsection">
+                        <h2 class="subsection-title">Empanadones</h2>
+                        <div class="empanadas-list" id="empanadonesList"></div>
+                    </div>
+                    <div class="subsection" id="calzone">
+                        <h2 class="subsection-title">Calzone</h2>
+                        <div class="calzone-list" id="calzoneList"></div>
+                        <h2 class="subsection-title">Fainá</h2>
+                        <div class="faina-list" id="fainaList"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Bebidas -->
+        <section id="bebidas" class="menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Bebidas</h2>
+                </div>
+                <div class="bebidas-grid">
+                    <div class="bebidas-category">
+                        <h3 class="category-title">Gaseosas / Aguas</h3>
+                        <div class="bebidas-list" id="gaseosasList"></div>
+                    </div>
+                    <div class="bebidas-category">
+                        <h3 class="category-title">Cervezas</h3>
+                        <div class="bebidas-list" id="cervezasList"></div>
+                    </div>
+                    <div class="bebidas-category">
+                        <h3 class="category-title">Tragos & Vinos</h3>
+                        <div class="bebidas-list" id="tragosList"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner pago efectivo -->
+        <div class="pago-efectivo">
+            <div class="pago-inner">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <div class="pago-texto">
+                    <strong>Pagando en efectivo</strong>
+                    <span>10% de descuento</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-tagline">acostumbrate a lo bueno</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/elreydelamediamasa_mercedes/" target="_blank" rel="noopener"
+                    class="footer-social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2026 El Rey de la Media Masa &mdash; Mercedes, Buenos Aires</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,718 @@
+/* ===== VARIABLES CSS ===== */
+:root {
+    --rojo-rey: #7B1C1C;
+    --crema: #F5EDDC;
+    --crema-dark: #E8D9BF;
+    --checker-size: 20px;
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Lato', sans-serif;
+    --font-script: 'Dancing Script', cursive;
+    --transition: all 0.2s ease;
+}
+
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--crema);
+    color: var(--rojo-rey);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding: var(--checker-size);
+}
+
+/* ===== BORDE DAMERO ===== */
+.checker-frame {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    background-image: repeating-conic-gradient(
+        var(--rojo-rey) 0% 25%,
+        var(--crema)    0% 50%
+    ) 0 0 / var(--checker-size) var(--checker-size);
+}
+.checker-top    { top: 0; left: 0; right: 0; height: var(--checker-size); }
+.checker-bottom { bottom: 0; left: 0; right: 0; height: var(--checker-size); }
+.checker-left   { top: 0; left: 0; bottom: 0; width: var(--checker-size); }
+.checker-right  { top: 0; right: 0; bottom: 0; width: var(--checker-size); }
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: var(--checker-size);
+    background: var(--crema);
+    border-bottom: 2px solid var(--rojo-rey);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.6rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+/* Wrapper que corta el espacio en blanco inferior del PNG (logo 642×795, ~30% de whitespace abajo) */
+.nav-logo-wrap {
+    width: 78px;
+    height: 66px;
+    overflow: hidden;
+    display: block;
+    flex-shrink: 0;
+}
+
+.nav-logo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav-location {
+    font-family: var(--font-heading);
+    font-size: 0.58rem;
+    color: var(--rojo-rey);
+    opacity: 0.55;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 0.1rem;
+}
+
+.nav-link {
+    padding: 0.4rem 0.9rem;
+    color: var(--rojo-rey);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    border-bottom-color: var(--rojo-rey);
+}
+
+.search-toggle {
+    background: transparent;
+    border: 2px solid var(--rojo-rey);
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--rojo-rey);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.search-toggle:hover {
+    background: var(--rojo-rey);
+    color: var(--crema);
+}
+
+/* ===== BUSCADOR ===== */
+.search-bar {
+    background: var(--crema-dark);
+    border-bottom: 2px solid var(--rojo-rey);
+    padding: 0.75rem 0;
+    display: none;
+}
+
+.search-bar.active {
+    display: block;
+}
+
+.search-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 2px solid var(--rojo-rey);
+    border-radius: 0;
+    font-size: 0.9rem;
+    font-family: var(--font-body);
+    background: var(--crema);
+    color: var(--rojo-rey);
+    transition: var(--transition);
+}
+
+#searchInput::placeholder {
+    color: rgba(123, 28, 28, 0.4);
+}
+
+#searchInput:focus {
+    outline: none;
+    background: #fff;
+}
+
+.search-close {
+    background: var(--rojo-rey);
+    color: var(--crema);
+    border: none;
+    width: 42px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.search-close:hover {
+    opacity: 0.85;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    padding-bottom: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.menu-section {
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(123, 28, 28, 0.18);
+}
+
+.section-alt {
+    background: var(--crema);
+}
+
+.section-header {
+    margin-bottom: 1.75rem;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--rojo-rey);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+/* ===== PIZZA GRID ===== */
+.pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pizza-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(123, 28, 28, 0.15);
+    align-items: start;
+}
+
+.pizza-card.hidden {
+    display: none;
+}
+
+.pizza-name {
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--rojo-rey);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    grid-column: 1;
+    grid-row: 1;
+    line-height: 1.2;
+}
+
+.pizza-ingredients {
+    font-size: 0.76rem;
+    color: var(--rojo-rey);
+    opacity: 0.68;
+    line-height: 1.4;
+    grid-column: 1;
+    grid-row: 2;
+    font-style: italic;
+}
+
+.pizza-prices {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.1rem;
+    white-space: nowrap;
+}
+
+.price-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+}
+
+.price-label {
+    font-family: var(--font-heading);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: var(--rojo-rey);
+    opacity: 0.55;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+}
+
+.price-value {
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--rojo-rey);
+}
+
+/* ===== AVISOS (mitad/mitad + veganas) ===== */
+.menu-avisos {
+    border: 2px solid var(--rojo-rey);
+    overflow: hidden;
+}
+
+.avisos-politicas {
+    padding: 0.7rem 1rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(123, 28, 28, 0.2);
+}
+
+.aviso-item {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.aviso-item i {
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+.aviso-item strong {
+    font-weight: 700;
+}
+
+.aviso-vegana {
+    background: var(--rojo-rey);
+    color: var(--crema);
+    padding: 0.65rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.aviso-vegana i {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* ===== DOS COLUMNAS (EMPANADONES) ===== */
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 3rem;
+}
+
+.subsection {
+    background: transparent;
+    padding: 0;
+}
+
+.subsection-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--rojo-rey);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    margin-bottom: 0.875rem;
+    margin-top: 1.75rem;
+}
+
+.subsection-title:first-child {
+    margin-top: 0;
+}
+
+/* ===== LISTAS - EMPANADONES / CALZONE / FAINA ===== */
+.empanadas-list,
+.calzone-list,
+.faina-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.empanada-item,
+.calzone-item,
+.faina-item {
+    background: transparent;
+    padding: 0.55rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(123, 28, 28, 0.15);
+    box-shadow: none;
+}
+
+.calzone-item {
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.item-name {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--rojo-rey);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.item-ingredients {
+    font-size: 0.75rem;
+    color: var(--rojo-rey);
+    opacity: 0.65;
+    margin-top: 0.15rem;
+    font-style: italic;
+    font-family: var(--font-body);
+}
+
+.item-price {
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--rojo-rey);
+    white-space: nowrap;
+    min-width: 68px;
+    text-align: right;
+}
+
+/* ===== BEBIDAS ===== */
+.bebidas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.bebidas-category {
+    background: transparent;
+}
+
+.category-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--rojo-rey);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    margin-bottom: 0.875rem;
+}
+
+.bebidas-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.bebida-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid rgba(123, 28, 28, 0.15);
+    gap: 0.75rem;
+}
+
+.bebida-item:last-child {
+    border-bottom: none;
+}
+
+.bebida-name {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--rojo-rey);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+}
+
+.bebida-name small {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 400;
+    opacity: 0.6;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: var(--font-body);
+}
+
+.bebida-price {
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--rojo-rey);
+    white-space: nowrap;
+}
+
+/* ===== BANNER PAGO EFECTIVO ===== */
+.pago-efectivo {
+    background: var(--crema-dark);
+    border-top: 2px solid var(--rojo-rey);
+    border-bottom: 2px solid var(--rojo-rey);
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+    margin-left: calc(-1 * var(--checker-size));
+    margin-right: calc(-1 * var(--checker-size));
+}
+
+.pago-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: var(--rojo-rey);
+}
+
+.pago-inner > i {
+    font-size: 2.4rem;
+    opacity: 0.75;
+}
+
+.pago-texto {
+    text-align: left;
+}
+
+.pago-texto strong {
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    display: block;
+    opacity: 0.7;
+}
+
+.pago-texto span {
+    font-family: var(--font-heading);
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    display: block;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: var(--rojo-rey);
+    color: var(--crema);
+    padding: 2.5rem 1.5rem 1.25rem;
+    /* Borde a borde: rompe el padding del body en los 3 lados */
+    margin-left: calc(-1 * var(--checker-size));
+    margin-right: calc(-1 * var(--checker-size));
+    margin-bottom: calc(-1 * var(--checker-size));
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+
+
+.footer-tagline {
+    font-family: var(--font-script);
+    font-size: 2rem;
+    color: var(--crema);
+    opacity: 0.85;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(245, 237, 220, 0.5);
+    border-radius: 50%;
+    color: var(--crema);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.footer-social-link:hover {
+    background: var(--crema);
+    color: var(--rojo-rey);
+    border-color: var(--crema);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(245, 237, 220, 0.2);
+    padding-top: 1rem;
+    color: rgba(245, 237, 220, 0.4);
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .pizza-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+        padding: 0.6rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        gap: 0;
+        border-top: 1px solid rgba(123, 28, 28, 0.15);
+        padding-top: 0.35rem;
+    }
+
+    .nav-link {
+        padding: 0.35rem 0.6rem;
+        font-size: 0.78rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .subsection-title {
+        margin-top: 2rem;
+    }
+
+    .bebidas-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .avisos-politicas {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .pago-texto span {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --checker-size: 16px;
+    }
+
+    .container {
+        padding: 0 0.875rem;
+    }
+
+    .menu-section {
+        padding: 2rem 0;
+    }
+
+    .pago-efectivo {
+        padding: 1.75rem 1rem;
+    }
+
+    .pago-inner > i {
+        font-size: 2rem;
+    }
+
+    .pago-texto span {
+        font-size: 1.4rem;
+    }
+
+    .footer-logo {
+        height: 56px;
+    }
+
+    .footer-tagline {
+        font-size: 1.6rem;
+    }
+}

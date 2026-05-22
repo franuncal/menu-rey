@@ -1,0 +1,419 @@
+{
+  "restaurante": {
+    "nombre": "El Rey de la Media Masa",
+    "ubicacion": "Mercedes",
+    "descripcion": "Pizzería tradicional en Mercedes, Buenos Aires",
+    "redes": {
+      "instagram": "https://instagram.com/elreydelamediamasa_mercedes",
+      "facebook": "https://facebook.com/ElReyDeLaMediaMasaMercedes"
+    }
+  },
+  "menu": {
+    "pizzas": [
+      {
+        "nombre": "MUZZARELLA",
+        "ingredientes": "Salsa de tomate, muzarella, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 20000,
+          "chica": 18000
+        }
+      },
+      {
+        "nombre": "JAMÓN",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 23000,
+          "chica": 20000
+        }
+      },
+      {
+        "nombre": "JAMÓN Y MORRONES",
+        "ingredientes": "Salsa de tomate, muzarella, jamón y morrones",
+        "precio": {
+          "grande": 24000,
+          "chica": 22000
+        }
+      },
+      {
+        "nombre": "JAMÓN Y TOMATES",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, tomate, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 24000,
+          "chica": 22000
+        }
+      },
+      {
+        "nombre": "JAMÓN Y HUEVO DURO",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, huevo duro, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 24000,
+          "chica": 22000
+        }
+      },
+      {
+        "nombre": "ROQUEFORT",
+        "ingredientes": "Salsa de tomate, muzarella, roquefort, aceitunas y orégano",
+        "precio": {
+          "grande": 24000,
+          "chica": 22000
+        }
+      },
+      {
+        "nombre": "PROVOLONE",
+        "ingredientes": "Muzarella, provolone, aceitunas y orégano",
+        "precio": {
+          "grande": 27000,
+          "chica": 25000
+        }
+      },
+      {
+        "nombre": "PROVOLETA",
+        "ingredientes": "Muzarella, jamón, provoleta, cebolla y aceitunas",
+        "precio": {
+          "grande": 26000,
+          "chica": 24000
+        }
+      },
+      {
+        "nombre": "CUATRO QUESOS",
+        "ingredientes": "Salsa de tomate, muzarella, roquefort, provolone, parmesano, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 29000,
+          "chica": 27000
+        }
+      },
+      {
+        "nombre": "ANCHOAS",
+        "ingredientes": "Salsa de tomate, anchoas, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 20000,
+          "chica": 18000
+        }
+      },
+      {
+        "nombre": "CALABRESA",
+        "ingredientes": "Salsa de tomate, muzarella, longaniza, morrones, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 24000,
+          "chica": 20000
+        }
+      },
+      {
+        "nombre": "NAPOLITANA",
+        "ingredientes": "Salsa de tomate, muzarella, tomate, ajo, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 23000,
+          "chica": 20000
+        }
+      },
+      {
+        "nombre": "GENOVESA",
+        "ingredientes": "Salsa de tomate, muzarella, tomate, anchoas, huevo duro, ajo, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 29000,
+          "chica": 27000
+        }
+      },
+      {
+        "nombre": "SICILIANA",
+        "ingredientes": "Salsa de tomate, ajo, morrones, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 20000,
+          "chica": 18000
+        }
+      },
+      {
+        "nombre": "FUGAZZA",
+        "ingredientes": "Cebolla, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 17000,
+          "chica": 15000
+        }
+      },
+      {
+        "nombre": "FUGAZZETA",
+        "ingredientes": "Cebolla, muzarella y aceitunas",
+        "precio": {
+          "grande": 20000,
+          "chica": 18000
+        }
+      },
+      {
+        "nombre": "FUGAZZETA AL ROQUEFORT",
+        "ingredientes": "Cebolla, muzarella, roquefort y aceitunas",
+        "precio": {
+          "grande": 26000,
+          "chica": 24000
+        }
+      },
+      {
+        "nombre": "FUGAZZETA CON JAMÓN",
+        "ingredientes": "Cebolla, muzarella, jamón y aceitunas",
+        "precio": {
+          "grande": 24000,
+          "chica": 22000
+        }
+      },
+      {
+        "nombre": "FUGAZZETA RELLENA",
+        "ingredientes": "Muzarella, jamón, tomate, cebolla, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 26000,
+          "chica": 24000
+        }
+      },
+      {
+        "nombre": "LA REINA",
+        "ingredientes": "Muzarella, jamón, ananá y cerezas",
+        "precio": {
+          "grande": 29000,
+          "chica": 27000
+        }
+      },
+      {
+        "nombre": "EL REY",
+        "ingredientes": "Muzarella, jamón, palmitos, salsa golf y aceitunas",
+        "precio": {
+          "grande": 29000,
+          "chica": 27000
+        }
+      },
+      {
+        "nombre": "PRIMAVERA",
+        "ingredientes": "Muzarella, jamón, ananá, durazno, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 28000,
+          "chica": 26000
+        }
+      },
+      {
+        "nombre": "PROVENZAL",
+        "ingredientes": "Muzarella, tomate, provenzal, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 23000,
+          "chica": 20000
+        }
+      },
+      {
+        "nombre": "CARIBEÑA",
+        "ingredientes": "Muzarella, tomate, huevo duro, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 27000,
+          "chica": 25000
+        }
+      },
+      {
+        "nombre": "VERDURA",
+        "ingredientes": "Salsa blanca, verduras, provolone y oliva",
+        "precio": {
+          "grande": 24000,
+          "chica": 22000
+        }
+      },
+      {
+        "nombre": "BRÓCOLI",
+        "ingredientes": "Muzarella, brócoli, provolone, ajo, aceitunas y oliva",
+        "precio": {
+          "grande": 24000,
+          "chica": 22000
+        }
+      },
+      {
+        "nombre": "ESPÁRRAGOS",
+        "ingredientes": "Muzarella, espárragos, provolone, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 29000,
+          "chica": 27000
+        }
+      },
+      {
+        "nombre": "PALERMITANA",
+        "ingredientes": "Muzarella, jamón crudo y rúcula",
+        "precio": {
+          "grande": 29000,
+          "chica": 27000
+        }
+      },
+      {
+        "nombre": "FIORENTINA",
+        "ingredientes": "Muzarella, tomate, espinaca, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 32000,
+          "chica": 29000
+        }
+      },
+      {
+        "nombre": "ESPECIAL DE LA CASA",
+        "ingredientes": "Muzarella, longaniza, jamón, huevo duro, anchoas, palmitos, salsa golf, provolone, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 29000,
+          "chica": 26000
+        }
+      },
+      {
+        "nombre": "FRANCESA",
+        "ingredientes": "Muzarella, champignones, provenzal, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 30000,
+          "chica": 27000
+        }
+      },
+      {
+        "nombre": "PIAMONTESA",
+        "ingredientes": "Muzarella, alcaucil, provolone, aceitunas, orégano y oliva",
+        "precio": {
+          "grande": 31000,
+          "chica": 28000
+        }
+      }
+    ],
+    "empanadones": [
+      {
+        "sabor": "Jamón y queso",
+        "precio": 3900
+      },
+      {
+        "sabor": "Carne",
+        "precio": 3900
+      },
+      {
+        "sabor": "Carne picante",
+        "precio": 3900
+      },
+      {
+        "sabor": "Pollo",
+        "precio": 3900
+      },
+      {
+        "sabor": "Verdura",
+        "precio": 3900
+      },
+      {
+        "sabor": "Humita",
+        "precio": 3900
+      },
+      {
+        "sabor": "Roquefort",
+        "precio": 3900
+      },
+      {
+        "sabor": "Muzzarella, panceta y ciruela",
+        "precio": 3900
+      },
+      {
+        "sabor": "Queso y cebolla",
+        "precio": 3900
+      },
+      {
+        "sabor": "Caprese",
+        "precio": 3900
+      }
+    ],
+    "calzone": [
+      {
+        "nombre": "NAPOLITANO",
+        "ingredientes": "Jamón, muzzarella, rodajas de tomate, orégano y oliva",
+        "precio": 24000
+      },
+      {
+        "nombre": "VEGETARIANO",
+        "ingredientes": "Zuchini, morrón, cebolla, berenjenas, muzzarela",
+        "precio": 24000
+      }
+    ],
+    "faina": [
+      {
+        "nombre": "FAINA (porción)",
+        "precio": 3000
+      },
+      {
+        "nombre": "FAINA RELLENA",
+        "precio": 22000
+      }
+    ],
+    "bebidas": {
+      "gaseosas": [
+        {
+          "nombre": "Agua mineral Eco de los Andes 500cc",
+          "precio": 2000
+        },
+        {
+          "nombre": "Pepsi 500cc",
+          "precio": 2500
+        },
+        {
+          "nombre": "Pepsi Black 500cc",
+          "precio": 2500
+        },
+        {
+          "nombre": "7UP 500cc",
+          "precio": 2500
+        },
+        {
+          "nombre": "Mirinda Naranja 500cc",
+          "precio": 2500
+        },
+        {
+          "nombre": "Agua saborizada Manzana 500cc",
+          "precio": 1500
+        }
+      ],
+      "cervezas": [
+        {
+          "nombre": "Andes Origen Rubia 1L",
+          "precio": 6000
+        },
+        {
+          "nombre": "Brahma 340cc",
+          "precio": 2000
+        },
+        {
+          "nombre": "Stella Artois 330cc",
+          "precio": 4000
+        },
+        {
+          "nombre": "Stella Artois 0% Alcohol 330cc",
+          "precio": 3500
+        },
+        {
+          "nombre": "Stella Artois 1L",
+          "precio": 7000
+        },
+        {
+          "nombre": "Stella Artois 710cc",
+          "precio": 6000
+        },
+        {
+          "nombre": "Corona 710cc",
+          "precio": 7500
+        }
+      ],
+      "tragos": [
+        {
+          "nombre": "Fernet 480cc",
+          "precio": 9000
+        },
+        {
+          "nombre": "Campari 480cc",
+          "precio": 9000
+        }
+      ],
+      "vinos": [
+        {
+          "nombre": "Vino tinto",
+          "precio": null
+        },
+        {
+          "nombre": "Vino blanco",
+          "precio": null
+        }
+      ]
+    }
+  },
+  "notas": {
+    "pizzas_mitad": "Las pizzas mitad/mitad se cobra la de mayor valor",
+    "adicional_extra": "Adicional por extra $1.000 c/u",
+    "descuento_efectivo": "Pago contado efectivo 10% de descuento",
+    "opciones_veganas": "Consultar por opciones veganas y sin TACC"
+  }
+}
