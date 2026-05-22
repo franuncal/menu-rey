@@ -19,287 +19,30 @@
         html,
         body {
             height: 100%;
+            width: 100%;
             overflow: hidden;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #fafafa;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Header con efecto glassmorphism */
-        .header {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-        }
-
-        .header-top {
-            padding: 14px 20px 12px;
-            text-align: center;
-        }
-
-        .header-top h1 {
-            color: #1a1a1a;
-            font-size: 17px;
-            font-weight: 700;
-            margin: 0;
-            letter-spacing: -0.3px;
-        }
-
-        /* Navbar de secciones */
-        .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px 12px;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-        }
-
-        .navbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .nav-item {
-            flex-shrink: 0;
-            padding: 9px 18px;
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 0, 0, 0.06);
-            border-radius: 24px;
-            color: #444;
-            font-size: 13px;
-            font-weight: 600;
-            text-decoration: none;
-            cursor: pointer;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            white-space: nowrap;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-        }
-
-        .nav-item:hover {
-            background: rgba(26, 26, 26, 0.92);
-            color: white;
-            border-color: rgba(26, 26, 26, 0.2);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-        }
-
-        .nav-item:active {
-            transform: scale(0.96) translateY(0);
-        }
-
-        .nav-item.active {
-            background: rgba(26, 26, 26, 0.95);
-            color: white;
-            border-color: rgba(26, 26, 26, 0.2);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Contenedor del PDF - empieza desde arriba */
-        .pdf-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: white;
+            background: #ffffff;
         }
 
         iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             border: none;
-            display: block;
-        }
-
-        /* Loading spinner */
-        .loading {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            padding: 30px 40px;
-            border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-            border: 1px solid rgba(0, 0, 0, 0.06);
-        }
-
-        .loading.hidden {
-            display: none;
-        }
-
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid rgba(0, 0, 0, 0.08);
-            border-top-color: #1a1a1a;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 16px;
-        }
-
-        .loading-text {
-            color: #1a1a1a;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Mobile adjustments */
-        @media (max-width: 768px) {
-            .header-top {
-                padding: 12px 16px 10px;
-            }
-
-            .header-top h1 {
-                font-size: 15px;
-            }
-
-            .navbar {
-                padding: 6px 12px 10px;
-                gap: 6px;
-                justify-content: flex-start;
-            }
-
-            .nav-item {
-                padding: 8px 16px;
-                font-size: 12px;
-            }
         }
     </style>
 </head>
 
 <body>
-    <div class="loading" id="loading">
-        <div class="spinner"></div>
-        <div class="loading-text">Cargando menú...</div>
-    </div>
-
-    <!-- PDF va primero, debajo de todo -->
-    <div class="pdf-container">
-        <iframe src="https://drive.google.com/file/d/15DMo8HltkUcjIZu5LHtwUUgJry5R8pdO/preview" allow="autoplay"
-            loading="lazy" id="pdfFrame">
-        </iframe>
-    </div>
-
-    <!-- Header flotante encima con blur -->
-    <div class="header">
-        <div class="header-top">
-            <h1>🍕 El Rey de la Media Masa</h1>
-        </div>
-        <nav class="navbar">
-            <a href="#" class="nav-item active" data-page="1">
-                <span>🍕</span>
-                <span>Pizzas</span>
-            </a>
-            <a href="#" class="nav-item" data-page="2">
-                <span>🥟</span>
-                <span>Empanadones</span>
-            </a>
-            <a href="#" class="nav-item" data-page="2">
-                <span>🫓</span>
-                <span>Calzone</span>
-            </a>
-            <a href="#" class="nav-item" data-page="3">
-                <span>🍺</span>
-                <span>Bebidas</span>
-            </a>
-        </nav>
-    </div>
-
-    <script>
-        // Ocultar loading después de cargar
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.getElementById('loading').classList.add('hidden');
-            }, 1000);
-        });
-
-        // Detectar carga del iframe
-        const iframe = document.getElementById('pdfFrame');
-        if (iframe) {
-            iframe.addEventListener('load', () => {
-                document.getElementById('loading').classList.add('hidden');
-            });
-        }
-
-        // Navegación entre secciones
-        const navItems = document.querySelectorAll('.nav-item');
-        const pdfFrame = document.getElementById('pdfFrame');
-
-        navItems.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-
-                // Remover active de todos
-                navItems.forEach(nav => nav.classList.remove('active'));
-
-                // Agregar active al clickeado
-                item.classList.add('active');
-
-                // Obtener página del data-page
-                const page = item.getAttribute('data-page');
-
-                // Actualizar src del iframe con la página específica
-                const baseUrl = 'https://drive.google.com/file/d/15DMo8HltkUcjIZu5LHtwUUgJry5R8pdO/preview';
-                pdfFrame.src = `${baseUrl}#page=${page}`;
-            });
-        });
-
-        // Scroll horizontal suave en navbar (mobile)
-        const navbar = document.querySelector('.navbar');
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-
-        navbar.addEventListener('mousedown', (e) => {
-            isDown = true;
-            startX = e.pageX - navbar.offsetLeft;
-            scrollLeft = navbar.scrollLeft;
-        });
-
-        navbar.addEventListener('mouseleave', () => {
-            isDown = false;
-        });
-
-        navbar.addEventListener('mouseup', () => {
-            isDown = false;
-        });
-
-        navbar.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - navbar.offsetLeft;
-            const walk = (x - startX) * 2;
-            navbar.scrollLeft = scrollLeft - walk;
-        });
-    </script>
+    <iframe 
+        src="https://drive.google.com/file/d/15DMo8HltkUcjIZu5LHtwUUgJry5R8pdO/preview"
+        allow="autoplay">
+    </iframe>
 </body>
 
 </html>
