@@ -27,7 +27,7 @@ body {
     color: var(--rojo-rey);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    padding: var(--checker-size);
+    padding: 0 var(--checker-size) var(--checker-size);
 }
 
 /* ===== BORDE DAMERO ===== */
@@ -48,7 +48,7 @@ body {
 /* ===== NAVBAR ===== */
 .navbar {
     position: sticky;
-    top: var(--checker-size);
+    top: 0;
     background: var(--crema);
     border-bottom: 2px solid var(--rojo-rey);
     z-index: 1000;

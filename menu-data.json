@@ -28,7 +28,7 @@
       },
       {
         "nombre": "JAMÓN Y MORRONES",
-        "ingredientes": "Salsa de tomate, muzarella, jamón y morrones",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, morrones, aceitunas, orégano y oliva",
         "precio": {
           "grande": 24000,
           "chica": 22000
@@ -36,7 +36,7 @@
       },
       {
         "nombre": "JAMÓN Y TOMATES",
-        "ingredientes": "Salsa de tomate, muzarella, jamón, tomate, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, tomate en rodajas, aceitunas, orégano y oliva",
         "precio": {
           "grande": 24000,
           "chica": 22000
@@ -52,7 +52,7 @@
       },
       {
         "nombre": "ROQUEFORT",
-        "ingredientes": "Salsa de tomate, muzarella, roquefort, aceitunas y orégano",
+        "ingredientes": "Salsa de tomate, muzarella, roquefort, aceitunas, orégano y oliva",
         "precio": {
           "grande": 24000,
           "chica": 22000
@@ -60,7 +60,7 @@
       },
       {
         "nombre": "PROVOLONE",
-        "ingredientes": "Muzarella, provolone, aceitunas y orégano",
+        "ingredientes": "Salsa de tomate, muzarella, provolone, aceitunas, orégano y oliva",
         "precio": {
           "grande": 27000,
           "chica": 25000
@@ -68,7 +68,7 @@
       },
       {
         "nombre": "PROVOLETA",
-        "ingredientes": "Muzarella, jamón, provoleta, cebolla y aceitunas",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, rodajas de provoleta, cebolla, aceitunas, orégano y oliva",
         "precio": {
           "grande": 26000,
           "chica": 24000
@@ -76,7 +76,7 @@
       },
       {
         "nombre": "CUATRO QUESOS",
-        "ingredientes": "Salsa de tomate, muzarella, roquefort, provolone, parmesano, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, roquefort, provolone, provoleta, aceitunas, orégano y oliva",
         "precio": {
           "grande": 29000,
           "chica": 27000
@@ -100,7 +100,7 @@
       },
       {
         "nombre": "NAPOLITANA",
-        "ingredientes": "Salsa de tomate, muzarella, tomate, ajo, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, tomate en rodajas y oliva",
         "precio": {
           "grande": 23000,
           "chica": 20000
@@ -108,7 +108,7 @@
       },
       {
         "nombre": "GENOVESA",
-        "ingredientes": "Salsa de tomate, muzarella, tomate, anchoas, huevo duro, ajo, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, tomate en rodajas, anchoas, huevo duro, ajo, aceitunas, orégano y oliva",
         "precio": {
           "grande": 29000,
           "chica": 27000
@@ -132,7 +132,7 @@
       },
       {
         "nombre": "FUGAZZETA",
-        "ingredientes": "Cebolla, muzarella y aceitunas",
+        "ingredientes": "Cebolla, muzarella, aceitunas, orégano y oliva",
         "precio": {
           "grande": 20000,
           "chica": 18000
@@ -140,7 +140,7 @@
       },
       {
         "nombre": "FUGAZZETA AL ROQUEFORT",
-        "ingredientes": "Cebolla, muzarella, roquefort y aceitunas",
+        "ingredientes": "Cebolla, muzarella, roquefort, aceitunas, orégano y oliva",
         "precio": {
           "grande": 26000,
           "chica": 24000
@@ -148,7 +148,7 @@
       },
       {
         "nombre": "FUGAZZETA CON JAMÓN",
-        "ingredientes": "Cebolla, muzarella, jamón y aceitunas",
+        "ingredientes": "Cebolla, muzarella, jamón, aceitunas, orégano y oliva",
         "precio": {
           "grande": 24000,
           "chica": 22000
@@ -156,15 +156,15 @@
       },
       {
         "nombre": "FUGAZZETA RELLENA",
-        "ingredientes": "Muzarella, jamón, tomate, cebolla, aceitunas, orégano y oliva",
+        "ingredientes": "Muzarella, jamón, tomate en rodajas, cebolla, aceitunas, orégano y oliva",
         "precio": {
-          "grande": 26000,
-          "chica": 24000
+          "grande": 32000,
+          "chica": 32000
         }
       },
       {
         "nombre": "LA REINA",
-        "ingredientes": "Muzarella, jamón, ananá y cerezas",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, ananá, aceitunas, orégano y oliva",
         "precio": {
           "grande": 29000,
           "chica": 27000
@@ -172,7 +172,7 @@
       },
       {
         "nombre": "EL REY",
-        "ingredientes": "Muzarella, jamón, palmitos, salsa golf y aceitunas",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, palmitos, salsa golf, aceitunas, orégano y oliva",
         "precio": {
           "grande": 29000,
           "chica": 27000
@@ -180,7 +180,7 @@
       },
       {
         "nombre": "PRIMAVERA",
-        "ingredientes": "Muzarella, jamón, ananá, durazno, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, jamón, ananá, durazno, aceitunas, orégano y oliva",
         "precio": {
           "grande": 28000,
           "chica": 26000
@@ -188,7 +188,7 @@
       },
       {
         "nombre": "PROVENZAL",
-        "ingredientes": "Muzarella, tomate, provenzal, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, tomate en rodajas, provenzal, aceitunas, orégano y oliva",
         "precio": {
           "grande": 23000,
           "chica": 20000
@@ -196,7 +196,7 @@
       },
       {
         "nombre": "CARIBEÑA",
-        "ingredientes": "Muzarella, tomate, huevo duro, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, tomate en rodajas, huevo duro, palmitos, anchoas, morrón, salsa golf, aceitunas, orégano y oliva",
         "precio": {
           "grande": 27000,
           "chica": 25000
@@ -204,7 +204,7 @@
       },
       {
         "nombre": "VERDURA",
-        "ingredientes": "Salsa blanca, verduras, provolone y oliva",
+        "ingredientes": "Salsa blanca, verduras, provolone, aceitunas, orégano y oliva",
         "precio": {
           "grande": 24000,
           "chica": 22000
@@ -212,7 +212,7 @@
       },
       {
         "nombre": "BRÓCOLI",
-        "ingredientes": "Muzarella, brócoli, provolone, ajo, aceitunas y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, brócoli, provolone, ajo, aceitunas, orégano y oliva",
         "precio": {
           "grande": 24000,
           "chica": 22000
@@ -220,7 +220,7 @@
       },
       {
         "nombre": "ESPÁRRAGOS",
-        "ingredientes": "Muzarella, espárragos, provolone, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, espárragos, provolone, aceitunas, orégano y oliva",
         "precio": {
           "grande": 29000,
           "chica": 27000
@@ -228,7 +228,7 @@
       },
       {
         "nombre": "PALERMITANA",
-        "ingredientes": "Muzarella, jamón crudo y rúcula",
+        "ingredientes": "Salsa de tomate, muzarella, jamón crudo, rúcula, aceitunas, orégano y oliva",
         "precio": {
           "grande": 29000,
           "chica": 27000
@@ -236,7 +236,7 @@
       },
       {
         "nombre": "FIORENTINA",
-        "ingredientes": "Muzarella, tomate, espinaca, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, provolone, tomate en rodajas, albahaca, aceitunas, orégano y oliva",
         "precio": {
           "grande": 32000,
           "chica": 29000
@@ -244,7 +244,7 @@
       },
       {
         "nombre": "ESPECIAL DE LA CASA",
-        "ingredientes": "Muzarella, longaniza, jamón, huevo duro, anchoas, palmitos, salsa golf, provolone, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, longaniza, jamón, huevo duro, morrón, anchoas, palmitos, salsa golf, provolone, aceitunas, orégano y oliva",
         "precio": {
           "grande": 29000,
           "chica": 26000
@@ -252,7 +252,7 @@
       },
       {
         "nombre": "FRANCESA",
-        "ingredientes": "Muzarella, champignones, provenzal, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, champignones, provenzal, provolone, aceitunas, orégano y oliva",
         "precio": {
           "grande": 30000,
           "chica": 27000
@@ -260,7 +260,7 @@
       },
       {
         "nombre": "PIAMONTESA",
-        "ingredientes": "Muzarella, alcaucil, provolone, aceitunas, orégano y oliva",
+        "ingredientes": "Salsa de tomate, muzarella, alcaucil, provolone, aceitunas, orégano y oliva",
         "precio": {
           "grande": 31000,
           "chica": 28000
@@ -312,23 +312,19 @@
     "calzone": [
       {
         "nombre": "NAPOLITANO",
-        "ingredientes": "Jamón, muzzarella, rodajas de tomate, orégano y oliva",
-        "precio": 24000
+        "ingredientes": "Jamón, muzzarella, rodajas de tomate, palmitos, morrón, longaniza, huevo duro, orégano y oliva",
+        "precio": 32000
       },
       {
         "nombre": "VEGETARIANO",
         "ingredientes": "Zuchini, morrón, cebolla, berenjenas, muzzarela",
-        "precio": 24000
+        "precio": 32000
       }
     ],
     "faina": [
       {
         "nombre": "FAINA (porción)",
         "precio": 3000
-      },
-      {
-        "nombre": "FAINA RELLENA",
-        "precio": 22000
       }
     ],
     "bebidas": {
@@ -405,6 +401,10 @@
         },
         {
           "nombre": "Vino blanco",
+          "precio": null
+        },
+        {
+          "nombre": "Copa de vino",
           "precio": null
         }
       ]
